@@ -16,10 +16,10 @@ just_the_docs:
           children:
               - title: "Personal"
                 url: /personal/
-              - title: "Development"
+              - title: "Dev"
                 url: /dev/
-              - title: "Mathematics"
-                url: /math/
+              - title: "Math"
+                url: /mathe/
 
 # 플러그인 설정
 plugins:
