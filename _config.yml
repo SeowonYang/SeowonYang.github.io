@@ -1,15 +1,46 @@
 title: Alison
 description: A description of your site
-baseurl: "" # 사이트가 루트 경로에 있다면 공백으로 둡니다.
-url: "https://SeowonYang.github.io" # 본인의 GitHub Pages URL
-
-# Remote theme 설정
+baseurl: ""
+url: "https://SeowonYang.github.io"
 remote_theme: just-the-docs/just-the-docs
+search_enabled: true
+
+# Navigation 설정
+just_the_docs:
+    navigation:
+        - title: "Home"
+          url: /
+          nav_order: 1
+        - title: "Categories"
+          nav_order: 2
+          children:
+              - title: "Personal"
+                url: /personal/
+              - title: "Development"
+                url: /dev/
+              - title: "Mathematics"
+                url: /math/
 
 # 플러그인 설정
 plugins:
     - jekyll-remote-theme # 원격 테마를 사용하기 위한 플러그인
     - jekyll-seo-tag # SEO 태그 지원
+    - jekyll-archives
 
 # 빌드 설정
 markdown: kramdown
+
+defaults:
+    - scope:
+          path: ""
+          type: "posts"
+      values:
+          layout: "post"
+          categories: ["personal", "dev", "math"]
+
+jekyll-archives:
+    enabled:
+        - categories
+    layout: archive
+    permalinks:
+        categories: /categories/:name/
