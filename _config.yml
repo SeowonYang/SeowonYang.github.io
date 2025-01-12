@@ -1,0 +1,15 @@
+title: Alison
+description: A description of your site
+baseurl: "" # 사이트가 루트 경로에 있다면 공백으로 둡니다.
+url: "https://SeowonYang.github.io" # 본인의 GitHub Pages URL
+
+# Remote theme 설정
+remote_theme: just-the-docs/just-the-docs
+
+# 플러그인 설정
+plugins:
+    - jekyll-remote-theme # 원격 테마를 사용하기 위한 플러그인
+    - jekyll-seo-tag # SEO 태그 지원
+
+# 빌드 설정
+markdown: kramdown
