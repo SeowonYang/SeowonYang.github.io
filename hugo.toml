@@ -5,3 +5,20 @@ theme = "hugo-PaperMod"
 
 [params]
   description = "Hello, and welcome."
+
+[languages]
+[languages.ko]
+  languageName = "Korean"
+  title = "Yang Log"
+  weight = 1
+
+[languages.en]
+  languageName = "English"
+  title = "Yang Log"
+  weight = 2
+
+[[menu.main]]
+  name = "Categories"
+  identifier = "categories"
+  weight = 10
+  url = "/categories/"
