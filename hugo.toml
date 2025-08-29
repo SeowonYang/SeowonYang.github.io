@@ -1,0 +1,7 @@
+baseURL = "https://SeowonYang.github.io/"
+languageCode = "ko-kr"
+title = "Yang Log"
+theme = "hugo-PaperMod"
+
+[params]
+  description = "Hello, and welcome."
