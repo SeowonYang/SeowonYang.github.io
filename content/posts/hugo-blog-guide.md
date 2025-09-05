@@ -39,7 +39,7 @@ Hugo는 자체적으로 테마를 제공하지 않기 때문에 직접 테마를
 
 ```bash
 git init
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
 블로그 폴더 내의 `themes` 폴더에 테마가 저장된다. 이제 `hugo.toml` 설정 파일을 수정한다.
